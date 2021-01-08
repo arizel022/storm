@@ -1,0 +1,318 @@
+@font-face {
+    font-family: 'Comfortaa-Bold';
+    src: url('../appsfonts/Comfortaa-Bold.woff2') format('woff2'),
+        url('../appsfonts/Comfortaa-Bold.woff') format('woff');
+    font-weight: 700;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Comfortaa-Medium';
+    src: url('../appsfonts/Comfortaa-Medium.woff2') format('woff2'),
+        url('../appsfonts/Comfortaa-Medium.woff') format('woff');
+    font-weight: 500;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Comfortaa-Regular';
+    src: url('../appsfonts/Comfortaa-Regular.woff2') format('woff2'),
+        url('../appsfonts/Comfortaa-Regular.woff') format('woff');
+    font-weight: 400;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Comfortaa-SemiBold';
+    src: url('../appsfonts/Comfortaa-SemiBold.woff2') format('woff2'),
+        url('../appsfonts/Comfortaa-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Exo2-Black';
+    src: url('../appsfonts/Exo2-Black.woff2') format('woff2'),
+        url('../appsfonts/Exo2-Black.woff') format('woff');
+    font-weight: 900;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Exo2-Bold';
+    src: url('../appsfonts/Exo2-Bold.woff2') format('woff2'),
+        url('../appsfonts/Exo2-Bold.woff') format('woff');
+    font-weight: 700;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Exo2-Light';
+    src: url('../appsfonts/Exo2-Light.woff2') format('woff2'),
+        url('../appsfonts/Exo2-Light.woff') format('woff');
+    font-weight: 300;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Exo2-Regular';
+    src: url('../appsfonts/Exo2-Regular.woff2') format('woff2'),
+        url('../appsfonts/Exo2-Regular.woff') format('woff');
+    font-weight: 400;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Forum-Regular';
+    src: url('../appsfonts/Forum-Regular.woff2') format('woff2'),
+        url('../appsfonts/Forum-Regular.woff') format('woff');
+    font-weight: 400;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Lato-Black';
+    src: url('../appsfonts/Lato-Black.woff2') format('woff2'),
+        url('../appsfonts/Lato-Black.woff') format('woff');
+    font-weight: 900;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Lato-Bold';
+    src: url('../appsfonts/Lato-Bold.woff2') format('woff2'),
+        url('../appsfonts/Lato-Bold.woff') format('woff');
+    font-weight: 700;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Lato-Light';
+    src: url('../appsfonts/Lato-Light.woff2') format('woff2'),
+        url('../appsfonts/Lato-Light.woff') format('woff');
+    font-weight: 300;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Lato-Regular';
+    src: url('../appsfonts/Lato-Regular.woff2') format('woff2'),
+        url('../appsfonts/Lato-Regular.woff') format('woff');
+    font-weight: 400;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Montserrat-Black';
+    src: url('../appsfonts/Montserrat-Black.woff2') format('woff2'),
+        url('../appsfonts/Montserrat-Black.woff') format('woff');
+    font-weight: 900;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Montserrat-Bold';
+    src: url('../appsfonts/Montserrat-Bold.woff2') format('woff2'),
+        url('../appsfonts/Montserrat-Bold.woff') format('woff');
+    font-weight: 700;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Montserrat-Medium';
+    src: url('../appsfonts/Montserrat-Medium.woff2') format('woff2'),
+        url('../appsfonts/Montserrat-Medium.woff') format('woff');
+    font-weight: 500;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Montserrat-Regular';
+    src: url('../appsfonts/Montserrat-Regular') format('woff2'),
+        url('../appsfonts/Montserrat-Regular.woff') format('woff');
+    font-weight: 400;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'MontserratAlternates-Black';
+    src: url('../appsfonts/MontserratAlternates-Black.woff2') format('woff2'),
+        url('../appsfonts/MontserratAlternates-Black.woff') format('woff');
+    font-weight: 900;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'MontserratAlternates-Bold';
+    src: url('../appsfonts/MontserratAlternates-Bold.woff2') format('woff2'),
+        url('../appsfonts/MontserratAlternates-Bold.woff') format('woff');
+    font-weight: 700;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'MontserratAlternates-Light';
+    src: url('../appsfonts/MontserratAlternates-Light.woff2') format('woff2'),
+        url('../appsfonts/MontserratAlternates-Light.woff') format('woff');
+    font-weight: 300;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'MontserratAlternates-Medium';
+    src: url('../appsfonts/MontserratAlternates-Medium.woff2') format('woff2'),
+        url('../appsfonts/MontserratAlternates-Medium.woff') format('woff');
+    font-weight: 500;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'MontserratAlternates-Regular';
+    src: url('../appsfonts/MontserratAlternates-Regular.woff2') format('woff2'),
+        url('../appsfonts/MontserratAlternates-Regular.woff') format('woff');
+    font-weight: 400;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Nunito-Black';
+    src: url('../appsfonts/Nunito-Black.woff2') format('woff2'),
+        url('../appsfonts/Nunito-Black.woff') format('woff');
+    font-weight: 900;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Nunito-Bold';
+    src: url('../appsfonts/Nunito-Bold.woff2') format('woff2'),
+        url('../appsfonts/Nunito-Bold.woff') format('woff');
+    font-weight: 700;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Nunito-Regular';
+    src: url('../appsfonts/Nunito-Regular.woff2') format('woff2'),
+        url('../appsfonts/Nunito-Regular.woff') format('woff');
+    font-weight: 400;
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: 'OpenSans-Bold';
+    src: url('../appsfonts/OpenSans-Bold.woff2') format('woff2'),
+        url('../appsfonts/OpenSans-Bold.woff') format('woff');
+    font-weight: 700;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'OpenSans-ExtraBold';
+    src: url('../appsfonts/OpenSans-ExtraBold.woff2') format('woff2'),
+        url('../appsfonts/OpenSans-ExtraBold.woff') format('woff');
+    font-weight: 800;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'OpenSans-Light';
+    src: url('../appsfonts/OpenSans-Light.woff2') format('woff2'),
+        url('../appsfonts/OpenSans-Light.woff') format('woff');
+    font-weight: 300;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'OpenSans-Regular';
+    src: url('../appsfonts/OpenSans-Regular.woff2') format('woff2'),
+        url('../appsfonts/OpenSans-Regular.woff') format('woff');
+    font-weight: 400;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Oswald-Bold';
+    src: url('../appsfonts/Oswald-Bold.woff2') format('woff2'),
+        url('../appsfonts/Oswald-Bold.woff') format('woff');
+    font-weight: 700;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Oswald-Medium';
+    src: url('../appsfonts/Oswald-Medium.woff2') format('woff2'),
+        url('../appsfonts/Oswald-Medium.woff') format('woff');
+    font-weight: 500;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Oswald-Regular';
+    src: url('../appsfonts/Oswald-Regular.woff2') format('woff2'),
+        url('../appsfonts/Oswald-Regular.woff') format('woff');
+    font-weight: 400;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Oswald-SemiBold';
+    src: url('../appsfonts/Oswald-SemiBold.woff2') format('woff2'),
+        url('../appsfonts/Oswald-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Play-Bold';
+    src: url('../appsfonts/Play-Bold.woff2') format('woff2'),
+        url('../appsfonts/Play-Bold.woff') format('woff');
+    font-weight: 700;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Play-Regular';
+    src: url('../appsfonts/Play-Regular.woff2') format('woff2'),
+        url('../appsfonts/Play-Regular.woff') format('woff');
+    font-weight: 400;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Quicksand-Bold';
+    src: url('../appsfonts/Quicksand-Bold.woff2') format('woff2'),
+        url('../appsfonts/Quicksand-Bold.woff') format('woff');
+    font-weight: 700;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Quicksand-Medium';
+    src: url('../appsfonts/Quicksand-Medium.woff2') format('woff2'),
+        url('../appsfonts/Quicksand-Medium.woff') format('woff');
+    font-weight: 500;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Quicksand-Regular';
+    src: url('../appsfonts/Quicksand-Regular.woff2') format('woff2'),
+        url('../appsfonts/Quicksand-Regular.woff') format('woff');
+    font-weight: 400;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Roboto-Black';
+    src: url('../appsfonts/Roboto-Black.woff2') format('woff2'),
+        url('../appsfonts/Roboto-Black.woff') format('woff');
+    font-weight: 900;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Roboto-Bold';
+    src: url('../appsfonts/Roboto-Bold.woff2') format('woff2'),
+        url('../appsfonts/Roboto-Bold.woff') format('woff');
+    font-weight: 700;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Roboto-Medium';
+    src: url('../appsfonts/Roboto-Medium.woff2') format('woff2'),
+        url('../appsfonts/Roboto-Medium.woff') format('woff');
+    font-weight: 500;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Roboto-Regular';
+    src: url('../appsfonts/Roboto-Regular.woff2') format('woff2'),
+        url('../appsfonts/Roboto-Regular.woff') format('woff');
+    font-weight: 400;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'RobotoCondensed-Bold';
+    src: url('../appsfonts/RobotoCondensed-Bold.woff2') format('woff2'),
+        url('../appsfonts/RobotoCondensed-Bold.woff') format('woff');
+    font-weight: 700;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'RobotoCondensed-Light';
+    src: url('../appsfonts/RobotoCondensed-Light.woff2') format('woff2'),
+        url('../appsfonts/RobotoCondensed-Light.woff') format('woff');
+    font-weight: 300;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'RobotoCondensed-Regular';
+    src: url('../appsfonts/RobotoCondensed-Regular.woff2') format('woff2'),
+        url('../appsfonts/RobotoCondensed-Regular.woff') format('woff');
+    font-weight: 400;
+    font-display: swap;
+}
+
