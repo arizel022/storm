@@ -9,7 +9,8 @@ html {
 html,
 body {
     height: 100%;
-    background-color: #000;
+    background-color: rgb(255, 255, 255);
+    font-family: 'Comfortaa-Regular';
 }
 a {
     display: inline-block;
@@ -22,8 +23,18 @@ ul, li {
     list-style: none;
 }
 .container {
-    width: 1200px;
+    width: 1600px;
     margin: 0 auto;
     padding: 0 15px;
+}
+.header__social-link.menu-btn {
+    color: transparent;
+    border: 1px solid transparent;
+    cursor: pointer;
+    &:active,
+    .active {
+        border: 1px solid $act;
+        box-shadow: inset 2px 2px 8px #000;
+    }
 }
 
