@@ -27,14 +27,71 @@ ul, li {
     margin: 0 auto;
     padding: 0 15px;
 }
-.header__social-link.menu-btn {
-    color: transparent;
-    border: 1px solid transparent;
-    cursor: pointer;
-    &:active,
-    .active {
-        border: 1px solid $act;
-        box-shadow: inset 2px 2px 8px #000;
+.icon-transparent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 120px;
+    font-size: 45px;
+    border-radius: 50%;
+    margin: 0 auto 50px;
+    &:before {
+        padding: 15px;
     }
 }
-
+.btn-main {
+    border-radius: 50px;
+    border: 1px solid $main;
+    padding: 12px 0 10px;
+    color: $main;
+    transition: .3s;
+    &:hover {
+        box-shadow: 4px 3px 8px rgb(19, 60, 40);
+        border: 1px solid transparent;
+    }
+    &--act {
+        border-radius: 50px;
+        background-color: $act;
+        padding: 14px 85px 11px;
+        color: #fff;
+        text-transform: uppercase;
+        transition: .3s;
+        &:hover {
+            box-shadow: 4px 3px 8px rgb(0, 0, 0);
+        }
+        &:active {
+            box-shadow: inset 4px 3px 8px rgb(0, 0, 0);
+        }
+    }
+    &:active {
+        box-shadow: inset 4px 3px 8px rgb(19, 60, 40);
+    }
+}
+.dynamic {        
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: url(../images/twodays.jpg);
+    width: 100%;
+    min-height: 344px;
+    &__inner {
+        padding: 60px 0;
+        text-align: center;
+        color: #fff;
+    }
+    &__icon {
+        color: #fff;
+        border: 1px solid #fff;
+    }
+    &__title {
+        font-size: 30px;
+        margin-bottom: 15px;
+    }
+    &__text {
+        font-size: 22px;
+        line-height: 28px;
+        max-width: 50%;
+        margin: 0 auto;
+    }
+}

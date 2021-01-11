@@ -62,49 +62,134 @@
     font-display: swap;
 }
 
+
+
 @font-face {
-    font-family: 'icomoon';
-    src:  url('../fonts/icomoon.eot?7ir1hi');
-    src:  url('../fonts/icomoon.eot?7ir1hi#iefix') format('embedded-opentype'),
-      url('../fonts/icomoon.ttf?7ir1hi') format('truetype'),
-      url('../fonts/icomoon.woff?7ir1hi') format('woff'),
-      url('../fonts/icomoon.svg?7ir1hi#icomoon') format('svg');
-    font-weight: normal;
-    font-style: normal;
-    font-display: block;
-  }
-  
-  [class^="icon-"], [class*=" icon-"] {
-    /* use !important to prevent issues with browser extensions that change fonts */
-    font-family: 'icomoon' !important;
-    // speak: never;
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
-  
-    /* Better Font Rendering =========== */
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
-  
-  .icon-mail:before {
-    content: "\e904";
-  }
-  .icon-menu:before {
-    content: "\e900";
-  }
-  .icon-social-skype-outline:before {
-    content: "\e901";
-  }
-  .icon-menu1:before {
-    content: "\e902";
-  }
-  .icon-telegram1:before {
-    content: "\e910";
-  }
-  .icon-viber:before {
-    content: "\e903";
-  }
-  
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?hv9ehp');
+  src:  url('../fonts/icomoon.eot?hv9ehp#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?hv9ehp') format('truetype'),
+    url('../fonts/icomoon.woff?hv9ehp') format('woff'),
+    url('../fonts/icomoon.svg?hv9ehp#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  // speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-laptop:before {
+  content: "\e001";
+}
+.icon-phone:before {
+  content: "\e004";
+}
+.icon-browser:before {
+  content: "\e00c";
+}
+.icon-toolbox:before {
+  content: "\e014";
+}
+.icon-wallet:before {
+  content: "\e016";
+}
+.icon-megaphone:before {
+  content: "\e021";
+}
+.icon-puzzle:before {
+  content: "\e026";
+}
+.icon-basket:before {
+  content: "\e027";
+}
+.icon-key:before {
+  content: "\e02c";
+}
+.icon-paperclip:before {
+  content: "\e02d";
+}
+.icon-tools:before {
+  content: "\e033";
+}
+.icon-linegraph:before {
+  content: "\e039";
+}
+.icon-hotairballoon:before {
+  content: "\e044";
+}
+.icon-chat:before {
+  content: "\e049";
+}
+.icon-alarmclock:before {
+  content: "\e059";
+}
+.icon-mail:before {
+  content: "\e904";
+}
+.icon-menu:before {
+  content: "\e900";
+}
+.icon-social-skype-outline:before {
+  content: "\e901";
+}
+.icon-menu1:before {
+  content: "\e902";
+}
+.icon-minus:before {
+  content: "\f068";
+}
+.icon-check:before {
+  content: "\f00c";
+}
+.icon-chevron-left:before {
+  content: "\f053";
+}
+.icon-chevron-right:before {
+  content: "\f054";
+}
+.icon-chevron-up:before {
+  content: "\f077";
+}
+.icon-chevron-down:before {
+  content: "\f078";
+}
+.icon-group:before {
+  content: "\f0c0";
+}
+.icon-users:before {
+  content: "\f0c0";
+}
+.icon-angle-left:before {
+  content: "\f104";
+}
+.icon-angle-right:before {
+  content: "\f105";
+}
+.icon-angle-up:before {
+  content: "\f106";
+}
+.icon-angle-down:before {
+  content: "\f107";
+}
+.icon-skype:before {
+  content: "\f17e";
+}
+.icon-telegram1:before {
+  content: "\e910";
+}
+.icon-viber:before {
+  content: "\e903";
+}
