@@ -20,13 +20,8 @@
         align-items: center;
     }
     &__logo {
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        background-image: url(../images/logo.png);
         width: 211px;
         height: 50px;
-        // margin: 0 auto;
     }
     &__title {
         font-size: 64px;
@@ -44,19 +39,63 @@
             margin-bottom: 15px;
         }
     }
-    &__social {
-        position: absolute;
-        background-color: #0f2821c5;
-        width: 20%;
-        height: 0;
-        right: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        transition: all .7s;
+    &__video {
+        max-width: 75%;
+        object-fit: cover;
+        position: relative;
+        &__layer {
+            width: 75%;
+            height: 100%;
+            position: absolute; 
+            top: 0;
+            right: 0;
+        }
     }
-    &__social-hoverbox {
+}
+.snetwork {
+    position: absolute; 
+    background-color: #0f2821c5;
+    width: 20%;
+    height: 0;
+    right: 0;
+    top: 0;
+    transition: all .7s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    &__link {
+        color: transparent;
+        border: 1px solid transparent;
+        font-size: 0;
+        margin-bottom: 12px;
+        padding: 18px;
+        border-radius: 50%;
+        position: relative;
+        transition: all .3s;
+        &.menu-btn {
+            color: transparent;
+            border: 1px solid transparent;
+            cursor: pointer;
+            &:active {
+                border: 1px solid $act;
+                box-shadow: inset 2px 2px 8px #000;     
+            }
+        }
+        &:hover {
+            box-shadow: -1px -1px 4px rgb(92, 92, 92), 3px 3px 8px #000;
+            .snetwork__hoverbox {
+                width: 260px;
+                border: 1px solid #fff;
+                font-size: 16px;
+            }
+        }
+        &:active {
+            border: 1px solid rgb(162, 162, 162);
+            box-shadow: inset 2px 2px 8px #000;
+        }
+    }
+    &__hoverbox {
         position: absolute;
         font-size: 0;
         right: 80px;
@@ -70,68 +109,22 @@
         text-align: center;
         transition: all .5s;
     }
-    &__social-link {
-        color: transparent;
-        border: 1px solid transparent;
-        font-size: 0;
-        margin-bottom: 12px;
-        padding: 18px;
-        border-radius: 50%;
-        position: relative;
-        transition: all .3s;
-        &:hover {
-            box-shadow: -1px -1px 4px rgb(92, 92, 92), 3px 3px 8px #000;
-            .header__social-hoverbox {
-                width: 260px;
-                border: 1px solid #fff;
-                font-size: 16px;
-            }
+}
+.header__video__layer:hover {
+    .snetwork {
+        height: 100%;
+        .snetwork__link {
+            font-size: 34px;
+            color: #fff;
+            border: 1px solid #fff;
         }
-        &:active,
-        .active {
-            border: 1px solid rgb(162, 162, 162);
-            box-shadow: inset 2px 2px 8px #000;
-        }
-        &.menu-btn {
-            color: transparent;
-            border: 1px solid transparent;
-            cursor: pointer;
-            &:active,
-            .active {
-                border: 1px solid $act;
-                box-shadow: inset 2px 2px 8px #000;
-            }
-        }
-
     }
-    &__video {
-        max-width: 75%;
-        object-fit: cover;
-        position: relative;
-        &--layer {
-            width: 75%;
-            height: 100%;
-            position: absolute;
-            top: 0;
-            right: 0;
-            &:hover {
-                .header__social {
-                    height: 100%
-                }
-                .header__social-link {
-                    font-size: 34px;
-                    color: #fff;
-                    border: 1px solid #fff;
-                }
-                .header__social-link.menu-btn {
-                    color: $act;
-                    border: 1px solid $act;
-                }
-
-            } 
-        }
+    .snetwork__link.menu-btn {
+        color: $act;
+        border: 1px solid $act;
     }
 }
+
 
 .variant {
     &__inner {
@@ -339,13 +332,12 @@
 }
 .why {
     background-color: $main;
-
     background-image: url(../images/why.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     &__inner {
-        height: 100vh;
+        height: 100%;
         padding: 12% 0;
         display: flex;
         flex-direction: column;
@@ -362,6 +354,7 @@
         display: flex;
         justify-content: space-around;
         align-items: center;
+        margin: 5% 0;
     }
     &__item {
         width: 20%;
@@ -377,7 +370,7 @@
 
     }
     &__btn {
-        margin: 0 auto;
+        margin: 65px auto 0;
         display: block;
     }
 }
@@ -394,7 +387,8 @@
     background-size: contain;
     background-position: top;
     background-image: url(../images/faq.png);
-    min-height: 60vh;
+    height: auto;
+    // min-height: 60vh;
     &__inner {
         padding: 70px 0 80px;
     }
@@ -405,7 +399,7 @@
         background-color: #e2ecf5;
     }
     &__item {
-        border-bottom: 2px solid #e2ecf5;
+        border-bottom: 3px solid #e2ecf5;
     }
     &__item-wrapper {
         display: flex;
@@ -415,22 +409,108 @@
         height: 80px;
         background-color: $main;
         color: $main2;
+        font-size: 22px;
     }
     &__ask {
         font-size: 22px;
     }
     &__ans {
-        font-size: 0;
-        padding: 0;
+        padding: 25px 35px;
+        font-size: 18px;
         color: #000;
-        transition: all .5s;
+        text-align: justify;
+        font-family: 'Nunito-Regular';
     }
     &__icon {
         font-size: 36px;
         cursor: pointer;
     }
 }
-.faq__ans.active {
-    padding: 25px 35px 25px;
-    font-size: 18px;
+.footer {
+    background-color: $main;
+    background-image: url(../images/footer.png);
+    background-position: left;
+    background-size: contain;
+    background-repeat: no-repeat;
+    &__inner {
+        width: 100%;
+        height: 180px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    &__logo {
+        width: 212px;
+        height: 48px;
+        margin-right: auto;
+    }
+    &__list {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin-right: 130px;
+    }
+    &__link {
+        color: #fff;
+        font-size: 21px;
+        line-height: 38px;
+        font-family: 'Nunito-Regular';
+        &:hover {
+            color: $main2;
+        }
+    }
+    &__link + .footer__link {
+        margin-bottom: 5px;
+    }
+    &__icon {
+        display: inline;
+        &:before {
+            padding-top: 5px;
+            padding-right: 15px;
+        }
+    }
+    &__snetwork {
+        display: flex;
+        justify-content: space-between;
+        .snetwork__link {
+            color: #fff;
+            border: 1px solid  #fff;
+            font-size: 30px;
+            margin-left: 12px;
+            padding: 18px;
+            border-radius: 50%;
+            transition: all .3s;
+            &:hover {
+                box-shadow: -1px -1px 4px rgb(92, 92, 92), 3px 3px 8px #000;
+            }
+            &:active {
+                border: 1px solid rgb(162, 162, 162);
+                box-shadow: inset 2px 2px 8px #000;
+            }
+            &.menu-btn {
+                color:  $act;
+                border: 1px solid transparent;
+                cursor: pointer;
+                &:hover {
+                    border: 1px solid $act;
+                }
+                &:active {
+                    box-shadow: inset 2px 2px 8px #000;     
+                }
+            }
+        }
+    }
+    &__bottom {
+        background-color: $dark;
+        color: #fff;
+        text-align: center;
+        padding: 10px 0;
+        font-family: 'Nunito-Regular';
+    }
+    &__bottom-link {
+        color: $main2;
+        &:hover {
+            color: $act;
+        }
+    }
 }

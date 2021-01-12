@@ -27,6 +27,12 @@ ul, li {
     margin: 0 auto;
     padding: 0 15px;
 }
+.logo {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: url(../images/logo.png);
+}
 .icon-transparent {
     display: flex;
     justify-content: center;
@@ -53,7 +59,7 @@ ul, li {
     &--act {
         border-radius: 50px;
         background-color: $act;
-        padding: 14px 85px 11px;
+        padding: 22px 85px 18px;
         color: #fff;
         text-transform: uppercase;
         transition: .3s;
