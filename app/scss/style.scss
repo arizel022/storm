@@ -20,8 +20,9 @@
         align-items: center;
     }
     &__logo {
-        width: 211px;
-        height: 50px;
+        width: 220px;
+        height: 180px;
+        background-image: url(../images/full-logo.png);
     }
     &__title {
         font-size: 64px;
@@ -161,6 +162,15 @@
         transition: .2s;
         &:hover {
             border: 2px solid rgb(107, 107, 107);
+            .item__icon {
+                box-shadow: -1px -1px 8px rgb(112, 112, 112), 1px 1px 8px rgb(112, 112, 112);
+            }
+        }
+        &:active {
+            box-shadow: inset -3px -3px 8px rgb(112, 112, 112), inset 3px 3px 8px rgb(112, 112, 112);
+            .item__icon {
+                box-shadow: none;
+            }
         }
     }
 
@@ -171,6 +181,7 @@
         text-align: center;
         color: $dark;
         border: 1px solid $dark;
+        transition: .2s;
     }
     &__title {
         text-align: center;
@@ -255,9 +266,9 @@
         margin-bottom: 10px;
     }
     &__item-text {
-        font-family: 'Arsenal-Regular';
+        font-family: 'Nunito-Regular';
         color: #fff;
-        font-size: 16px;
+        font-size: 18px;
         line-height: 20px;
     }
     &__numb {
@@ -305,7 +316,7 @@
     &__col {
         width: 40%;
         font-family: 'Arsenal-Regular';
-        font-size: 16px;
+        font-size: 20px;
         padding: 25px 15px 25px 60px;
         text-align: justify;
         &--mark {
@@ -410,6 +421,7 @@
         background-color: $main;
         color: $main2;
         font-size: 22px;
+        cursor: pointer;
     }
     &__ask {
         font-size: 22px;
@@ -423,9 +435,15 @@
     }
     &__icon {
         font-size: 36px;
-        cursor: pointer;
+        transition: .9s;
+    }
+    &__item-wrapper.active {
+        .faq__icon {
+            transform: rotate(180deg);
+        }
     }
 }
+
 .footer {
     background-color: $main;
     background-image: url(../images/footer.png);
@@ -440,9 +458,12 @@
         align-items: center;
     }
     &__logo {
-        width: 212px;
-        height: 48px;
+        width: 215px;
+        height: 55px;
         margin-right: auto;
+        margin-left: 50px;
+        background-image: url(../images/logo.png);
+        background-size: contain;
     }
     &__list {
         display: flex;

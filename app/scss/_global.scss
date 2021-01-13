@@ -31,8 +31,75 @@ ul, li {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    background-image: url(../images/logo.png);
+    display: block;
 }
+
+.menu-btn {
+    position: relative;
+}
+.menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: transparent;
+    width: 0;
+    margin-right: 50px;
+    transition: all .4s;
+    &__item {
+        display: block;
+        font-family: 'Comfortaa-SemiBold';
+        font-size: 0;
+        padding: 0;
+        text-align: center;
+        color: transparent;
+        border-bottom: 1px solid transparent;
+        transition: all .4s;
+        &:hover {
+            background-color: transparent;
+            color: transparent;
+            border-bottom: 1px solid transparent;
+        }
+    }
+}
+
+
+.menu-btn.active {
+    border: 1px solid rgb(162, 162, 162);
+    box-shadow: inset 2px 2px 8px #000;
+    &:hover {
+        border: 1px solid rgb(162, 162, 162);
+        box-shadow: inset 2px 2px 8px #000;
+    }
+    .menu {
+        width: 650px;
+        background-color: #fff;
+        right: 100%;
+        &__item {
+            font-size: 18px;
+            padding: 20px 25px;
+            color: $main;
+            border-bottom: 1px solid $main;
+            &:hover {
+                background-color: $dark;
+                color: #fff;
+                border-bottom: 1px solid $act;
+            }
+        }
+    }
+}
+.footer__snetwork .menu {
+    outline: 10000px solid transparent;
+}
+
+.menu-btn--footer.active {
+    .menu {
+        top: -400px;
+        box-shadow: -38px -38px 20px rgba(16, 16, 16, 0.713), 
+        38px 38px 20px rgba(16, 16, 16, 0.713);
+        outline: 10000px solid rgba(16, 16, 16, 0.713);
+    }
+}
+
 .icon-transparent {
     display: flex;
     justify-content: center;
