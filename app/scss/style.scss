@@ -382,7 +382,7 @@
     }
     &__btn {
         margin: 65px auto 0;
-        display: block;
+        cursor: pointer;
     }
 }
 .quest {
@@ -533,5 +533,72 @@
         &:hover {
             color: $act;
         }
+    }
+}
+//----------------------------------------portfolio
+.header--mini {
+    border-bottom: 2px solid #000;
+    .header__inner {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 25px 15px;
+        align-items: center;
+        width: 100%;
+    }
+    .snetwork {
+        position: static;
+        transition: all .7s;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        margin-right: 35px;
+        &__link {
+            font-size: 34px;
+            color: $main;
+            border: 1px solid $main;
+            margin-right: 12px;
+            padding: 18px;
+            border-radius: 50%;
+            transition: all .3s;
+            &.menu-btn {
+                color: $act;
+                border: 1px solid $act;
+                cursor: pointer;
+                &:active {
+                    border: 1px solid $act;
+                    box-shadow: inset 2px 2px 8px #000;     
+                }
+            }
+            &:hover {
+                box-shadow: -1px -1px 4px rgb(92, 92, 92), 3px 3px 8px #000;
+            }
+            &:active {
+                border: 1px solid rgb(162, 162, 162);
+                box-shadow: inset 2px 2px 8px #000;
+            }
+        }
+    }
+    .menu {
+        box-shadow: -1px -1px 4px rgb(92, 92, 92), 3px 3px 8px #000;
+    }
+}
+// border: 1px solid blue;
+.portfolio {
+    &__inner {
+        padding: 100px 15px;
+        text-align: center;
+    }
+    &__description {
+        font-size: 24px;
+        line-height: 30px;
+        width: 60%;
+        margin: 0 auto 40px;
+    }
+    &__title {
+        text-transform: uppercase;
+        font-family: 'RubikMonoOne-Regular';
+        font-size: 48px;
     }
 }
