@@ -600,5 +600,106 @@
         text-transform: uppercase;
         font-family: 'RubikMonoOne-Regular';
         font-size: 48px;
+        margin-bottom: 100px;
+    }
+}
+.works {
+    &__buttons {
+        margin-bottom: 90px;
+    }
+    &__btn {
+        border: none;
+        background-color: transparent;
+        text-transform: uppercase;
+        font-size: 18px;
+        padding: 10px 35px;
+        cursor: pointer;
+        &:focus {
+            outline: none;
+            background-color: $act;
+        }
+    }
+    &__collection {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    &__item {
+        border: 1px solid transparent;
+        width: 494px;
+        height: 272px;
+        position: relative;
+        border: 1px solid grey;
+        margin-bottom: 45px;
+        border-top-right-radius: 50px;
+        border-bottom-left-radius: 50px;
+        box-shadow: 4px 4px 8px #000;
+    }
+    &__line {
+        position: absolute;
+        background-color: transparent;
+        width: 100%;
+        top: 50%;
+        transform: translate(0, -50%);
+        margin: 0 2px;
+        transition: .5s;
+    }
+    &__title {
+        color: #fff;
+        font-size: 0;
+        padding: 18px 0;
+        transition: .5s;
+        &--name {
+            text-transform: uppercase;
+            display: block;
+            font-size: 0;
+            transition: .5s;
+            margin-bottom: -3px;
+        }
+    }
+    &__box {
+        position: absolute;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        width: 494px;
+        height: 272px;
+        cursor: pointer;
+        border-top-right-radius: 50px;
+        border-bottom-left-radius: 50px;
+        transition: .7s;
+        &--base {
+            background-image: url(../images/portfolio/base/base-prev.jpg);
+        }
+        &--btools {
+            background-image: url(../images/portfolio/btools/btools-prev.jpg);
+        }
+        &--clarity {
+            background-image: url(../images/portfolio/clarity/clarity-prev.jpg);
+        }
+        &--storm {
+            background-image: url(../images/portfolio/storm/storm-prev.jpg);
+        }
+        &--easyportal {
+            background-image: url(../images/portfolio/easyportal/easyportal-prev.jpg);
+        }
+        &--bene {
+            background-image: url(../images/portfolio/bene/bene-prev.jpg);
+        }
+    }
+    &__item:hover {
+        border: 1px solid transparent;
+        .works__box {
+            filter: blur(2px) brightness(40%);
+        }
+        .works__line {
+            background-color: $main;
+        }
+        .works__title {
+            font-size: 18px;
+        }
+        .works__title--name {
+            font-size: 24px;
+        }
     }
 }
