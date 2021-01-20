@@ -42,21 +42,15 @@
             </div>
         </div>
     </header>
-    
     <section class="portfolio">
         <div class="container">
             <div class="portfolio__inner">
-                <div class="portfolio__description">
+                <h2 class="portfolio__description">
                     Вы можете заказать любой из представленнных ниже сайтов
                     или же подобный по внешнему виду, тематике или функционалу.
-                </div>
-
-                <div class="portfolio__title">
-                    примеры сайтов wildweb
-                </div>
-
+                </h2>
+                <h1 class="portfolio__title">примеры сайтов wildweb</h1>
                 <div class="works">
-
 
                     <div class="works__buttons">
                         <button class="works__btn" type="button" data-filter="all">Все сайты</button>
@@ -68,14 +62,26 @@
                     </div>
                     <!-- 
                     ВИЗИТКИ - viz
-                    НА ШАБЛОНЕ - shab
+                    ШАБЛОН - shab
                     БИЗНЕС - bus
-                    СТРОИТЕЛЬНЫЕ - stroj
+                    СТРОЙ - stroj
                     ЛЕНДИГИ - lend
+                    ---------ШАБЛОН НОВОЙ КАРТОЧКИ САЙТА
+                    <a class="works__item mix category-AAA category-BBB category-CCC" data-order="1"
+                        href="ССЫЛКА НА СТРАНИЦУ САЙТА">
+                        <div class="works__box works__box--storm"></div>
+                        <div class="works__line">
+                            <div class="works__title">
+                                <span class="works__title--name">НАЗВАНИЕ</span>
+                                <br>ОПИСАНИЕ В 3-4 СЛОВА
+                            </div>
+                        </div>
+                    </a> 
                 -->
                     <div class="works__collection">
 
-                        <div class="works__item mix category-viz category-bus category-lend" data-order="1">
+                        <a class="works__item mix category-viz category-bus category-lend" data-order="1"
+                            href="portfolio/storm.html">
                             <div class="works__box works__box--storm"></div>
                             <div class="works__line">
                                 <div class="works__title">
@@ -83,9 +89,9 @@
                                     <br>сайт с услугами и портфолио
                                 </div>
                             </div>
-                        </div>
-
-                        <div class="works__item mix category-stroj" data-order="1">
+                        </a>
+                        <a class="works__item mix category-stroj" data-order="1"
+                            href="portfolio/b-tools.html">
                             <div class="works__box works__box--btools"></div>
                             <div class="works__line">
                                 <div class="works__title">
@@ -93,9 +99,9 @@
                                     <br>сайт строительной компании
                                 </div>
                             </div>
-                        </div>
-
-                        <div class="works__item mix category-viz category-bus" data-order="1">
+                        </a>
+                        <a class="works__item mix category-viz category-bus" data-order="1"
+                            href="portfolio/clarity.html">
                             <div class="works__box works__box--clarity"></div>
                             <div class="works__line">
                                 <div class="works__title">
@@ -103,9 +109,9 @@
                                     <br>сайт юридических услуг
                                 </div>
                             </div>
-                        </div>
-
-                        <div class="works__item mix category-viz category-shab category-bus" data-order="1">
+                        </a>
+                        <a class="works__item mix category-viz category-shab category-bus" data-order="1"
+                            href="portfolio/benedixus.html">
                             <div class="works__box works__box--bene"></div>
                             <div class="works__line">
                                 <div class="works__title">
@@ -113,8 +119,9 @@
                                     <br>Бизнес консьерж-сервис
                                 </div>
                             </div>
-                        </div>
-                        <div class="works__item mix category-viz category-bus" data-order="1">
+                        </a>
+                        <a class="works__item mix category-viz category-bus" data-order="1"
+                            href="portfolio/easyportal.html">
                             <div class="works__box works__box--easyportal"></div>
                             <div class="works__line">
                                 <div class="works__title">
@@ -122,10 +129,9 @@
                                     <br>Сайт для обмена криптовалют
                                 </div>
                             </div>
-                        </div>
-
-
-                        <div class="works__item mix category-viz category-bus" data-order="1">
+                        </a>
+                        <a class="works__item mix category-viz category-bus" data-order="1"
+                            href="portfolio/base.html">
                             <div class="works__box works__box--base"></div>
                             <div class="works__line">
                                 <div class="works__title">
@@ -133,49 +139,76 @@
                                     <br>базовый минимальный сайт
                                 </div>
                             </div>
-                        </div>
+                        </a>
                     </div>
-
                 </div>
             </div>
         </div>
     </section>
-
-
-    <section class="twodays dynamic">
-
-
-        <div class="dynamic__inner">
-            <div class="dynamic__icon icon-alarmclock  icon-transparent"></div>
-            <div class="dynamic__title">Cайт за 2 дня</div>
-            <div class="dynamic__text">Мы быстро создадим ваш сайт, настроим и подключим, добавим ваши товары или
-                опишем услуги, и запустим в работу.</div>
-        </div>
-
-        <!-- <section class="quest dynamic">
-            <div class="quest--dark">
-                <div class="dynamic__inner">
-                    <div class="dynamic__icon icon-group  icon-transparent"></div>
-                    <div class="dynamic__title">Минимум вопросов</div>
-                    <div class="dynamic__text">Ваш будущий сайт мы создаем уже прямо сейчас. Мы не строим громоздкие
-                        туманные
-                        тех.задания, а делаем выбор в пользу простоты.
-                        Мы учтем ваши пожелания, после чего сделаем свою работу как можно лучше.
-                    </div>
-                </div>
+    <section class="slider--portfolio">
+        <div class="dynamic urgently dynamic--portfolio">
+            <div class="dynamic__inner">
+                <div class="dynamic__icon icon-alarmclock  icon-transparent"></div>
+                <div class="dynamic__title">Cайт за 2 дня</div>
+                <div class="dynamic__text">Мы готовы взять на заказа СРОЧНЫЙ сайт, который будет готов через 1-2 дня. От
+                    вас потребуется минимальное ТЗ. При срочном заказе мы сами планируем внешний дизайн и набор
+                    функционала сайта. Стоимость срочного проекта - от 12 000 грн.</div>
+                <a class="dynamic__btn btn-main--act" href="expres-site.html">Заказать срочный
+                    сайт</a>
             </div>
-        </section> -->
-
+        </div>
+        <div class="dynamic urgently--1 dynamic--portfolio">
+            <div class="dynamic__inner">
+                <div class="dynamic__icon icon-group  icon-transparent"></div>
+                <div class="dynamic__title">Срочный сайт</div>
+                <div class="dynamic__text">
+                    Проект срочного сайта включает в себя регистрацию домена, хостинг, создание сайта на шаблоне,
+                    настройка внешнего вида и функционала, размещение контента, запуск в работу. Сайт будет работать на
+                    Wordpress и вы сможете самостоятельно менять контент.
+                </div>
+                <a class="dynamic__btn btn-main--act" href="expres-site.html">Заказать срочный
+                    сайт</a>
+            </div>
+        </div>
     </section>
-
-
-
-    <div class="why__btn btn-main--act">Заказать сайт
-    </div>
-    <div class="order__wrapper">
+    <section class="article">
+        <div class="container">
+            <div class="article__inner">
+                <h2>Портфолио сайтов WildWeb</h2>
+                <p class="article__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa sint
+                    voluptatibus, perferendis modi non ipsa cumque architecto ad enim officia quis sit debitis nesciunt
+                    repudiandae illum? Quisquam consequuntur esse fugit!Omnis tempora quo culpa error doloremque aperiam
+                    tenetur dolores voluptas quas? Cupiditate, consequatur corporis illo, fugiat repellendus recusandae
+                    optio distinctio commodi porro dicta odit, voluptate pariatur praesentium. Eius, iusto officia?</p>
+                <p class="article__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa sint
+                    voluptatibus, perferendis modi non ipsa cumque architecto ad enim officia quis sit debitis nesciunt
+                    repudiandae illum? Quisquam consequuntur esse fugit!Omnis tempora quo culpa error doloremque aperiam
+                    tenetur dolores voluptas quas? Cupiditate, consequatur corporis illo, fugiat repellendus recusandae
+                    optio distinctio commodi porro dicta odit, voluptate pariatur praesentium. Eius, iusto officia?</p>
+                <h2>Как веб-студии обычно предлагают купить сайт</h2>
+                <p class="article__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa sint
+                    voluptatibus, perferendis modi non ipsa cumque architecto ad enim officia quis sit debitis nesciunt
+                    repudiandae illum? Quisquam consequuntur esse fugit!Omnis tempora quo culpa error doloremque aperiam
+                    tenetur dolores voluptas quas? Cupiditate, consequatur corporis illo, fugiat repellendus recusandae
+                    optio distinctio commodi porro dicta odit, voluptate pariatur praesentium. Eius, iusto officia?</p>
+                <p class="article__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa sint
+                    voluptatibus, perferendis modi non ipsa cumque architecto ad enim officia quis sit debitis nesciunt
+                    repudiandae illum? Quisquam consequuntur esse fugit!Omnis tempora quo culpa error doloremque aperiam
+                    tenetur dolores voluptas quas? Cupiditate, consequatur corporis illo, fugiat repellendus recusandae
+                    optio distinctio commodi porro dicta odit, voluptate pariatur praesentium. Eius, iusto officia?</p>
+                <h2>Вы можете выбрать сайт и заказать его, как в магазине</h2>
+                <p class="article__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa sint
+                    voluptatibus, perferendis modi non ipsa cumque architecto ad enim officia quis sit debitis nesciunt
+                    repudiandae illum? Quisquam consequuntur esse fugit!Omnis tempora quo culpa error doloremque aperiam
+                    tenetur dolores voluptas quas? Cupiditate, consequatur corporis illo, fugiat repellendus recusandae
+                    optio distinctio commodi porro dicta odit, voluptate pariatur praesentium. Eius, iusto officia?</p>
+            </div>
+        </div>
+    </section>
+    <!-- это popup -->
+    <!-- <div class="order__wrapper">
         <div class="order">
             <div class="order__title">Как заказать сайт</div>
-
             <div class="order__block">
                 <div class="order__icon icon-creative-commons-attribution"></div>
                 <div class="order__text">Мы предпочитаем принцип максимальной простоты, а потому по возможности избегаем
@@ -235,11 +268,10 @@
                 </form>
             </div>
         </div>
-    </div>
-
-
-
-
+    </div> -->
+    <!-- это кнопка, вызывающая popup -->
+    <!-- <div class="why__btn btn-main--act">Заказать сайт
+    </div> -->
     <div id="toTop"><span class="icon-arrow-up"></span></div>
     <footer class="footer">
         <div class="container">
@@ -285,7 +317,7 @@
             </div>
         </div>
         <div class="footer__bottom">
-            Creating be <a class="footer__bottom-link" href="http://wildweb.online/">Wildweb.online</a> © 2021
+            Creating be <a class="footer__bottom-link" href="">Wildweb.online</a> © 2021
         </div>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>

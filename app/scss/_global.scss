@@ -53,6 +53,7 @@ ul, li {
     background-color: transparent;
     width: 0;
     margin-right: 50px;
+    z-index: 999;
     transition: all .4s;
     &__item {
         display: block;
@@ -70,8 +71,6 @@ ul, li {
         }
     }
 }
-
-
 .menu-btn.active {
     border: 1px solid rgb(162, 162, 162);
     box-shadow: inset 2px 2px 8px #000;
@@ -99,7 +98,6 @@ ul, li {
 .footer__snetwork .menu {
     outline: 10000px solid transparent;
 }
-
 .menu-btn--footer.active {
     .menu {
         top: -400px;
@@ -108,7 +106,6 @@ ul, li {
         outline: 10000px solid rgba(16, 16, 16, 0.713);
     }
 }
-
 .icon-transparent {
     display: flex;
     justify-content: center;
@@ -145,22 +142,39 @@ ul, li {
         &:active {
             box-shadow: inset 4px 3px 8px rgb(0, 0, 0);
         }
+        &:focus {
+            outline: none;
+        }
     }
     &:active {
         box-shadow: inset 4px 3px 8px rgb(19, 60, 40);
     }
+    &:focus {
+        outline: none;
+    }
 }
 .dynamic {        
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-image: url(../images/twodays.jpg);
+    position: relative;
     width: 100%;
     min-height: 344px;
+    &:before {  //картинка на псевдо + затемнение
+        content: '';
+        position: absolute;
+        filter: brightness(60%);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        min-height: 344px;
+    }
     &__inner {
+        position: absolute;
         padding: 60px 0;
         text-align: center;
         color: #fff;
+        left: 50%;
+        transform: translate(-50%, 0);
+        width: 100%;
     }
     &__icon {
         color: #fff;
@@ -176,6 +190,16 @@ ul, li {
         max-width: 50%;
         margin: 0 auto;
     }
+    &--portfolio {
+        .dynamic__text {
+            max-width: 70%;
+            margin-bottom: 35px;
+        }
+        &:before {
+            filter: brightness(45%);
+        }
+    }
+
 }
 #toTop {
     width: 70px;
@@ -314,5 +338,27 @@ ul, li {
         & > input {
             margin-bottom: 25px;
         }
+    }
+}
+.article {
+    &__inner {
+        padding: 50px 0;
+        h1 {
+            text-align: center;
+        }
+        h2 {
+            margin-top: 35px;
+        }
+    }
+    &__text {
+        font-family: 'Nunito-Regular';
+        font-size: 20px;
+        text-align: justify;
+    }
+    &__img {
+        display: block;
+        float: right;
+        padding-left: 25px;
+        width: 450px;
     }
 }

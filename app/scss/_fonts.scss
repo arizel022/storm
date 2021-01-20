@@ -61,13 +61,21 @@
     font-weight: 500;
     font-display: swap;
 }
+
+
+
+
+
+
+
+
 @font-face {
   font-family: 'icomoon';
-  src:  url('../fonts/icomoon.eot?kar1io');
-  src:  url('../fonts/icomoon.eot?kar1io#iefix') format('embedded-opentype'),
-    url('../fonts/icomoon.ttf?kar1io') format('truetype'),
-    url('../fonts/icomoon.woff?kar1io') format('woff'),
-    url('../fonts/icomoon.svg?kar1io#icomoon') format('svg');
+  src:  url('../fonts/icomoon.eot?d39mzx');
+  src:  url('../fonts/icomoon.eot?d39mzx#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?d39mzx') format('truetype'),
+    url('../fonts/icomoon.woff?d39mzx') format('woff'),
+    url('../fonts/icomoon.svg?d39mzx#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -94,8 +102,17 @@
 .icon-address:before {
   content: "\e90d";
 }
+.icon-aircraft:before {
+  content: "\e913";
+}
+.icon-circle-with-plus:before {
+  content: "\e914";
+}
 .icon-colours:before {
   content: "\e90e";
+}
+.icon-globe:before {
+  content: "\e915";
 }
 .icon-landline:before {
   content: "\e90f";
@@ -114,6 +131,9 @@
 }
 .icon-checkbox-checked:before {
   content: "\e906";
+}
+.icon-zoomin:before {
+  content: "\e916";
 }
 .icon-comment:before {
   content: "\e907";
@@ -184,11 +204,17 @@
 .icon-alarmclock:before {
   content: "\e059";
 }
+.icon-search-plus1:before {
+  content: "\e917";
+}
 .icon-minus:before {
   content: "\f068";
 }
 .icon-check:before {
   content: "\f00c";
+}
+.icon-search-plus:before {
+  content: "\f00e";
 }
 .icon-chevron-left:before {
   content: "\f053";
