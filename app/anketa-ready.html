@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WildWeb - анкета заказа готового сайта</title>
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+
+<body>
+
+    <header class="header header--mini">
+        <div class="container">
+            <div class="header__inner">
+
+
+                <a class="logo logo--mini" href="index.html"></a>
+
+
+                <div class="snetwork">
+                    <div class="snetwork__link menu-btn icon-menu">
+                        <div class="menu">
+                            <a href="site-na-shablone.html" class="menu__item">Простой САЙТ НА ШАБЛОНЕ</a>
+                            <a href="site-standart.html" class="menu__item">Сайт СТАНДАРТ</a>
+                            <a href="site-personal.html" class="menu__item">ПЕРСОНАЛЬНЫЙ САЙТ с уникальным дизайном</a>
+                            <a href="site-full.html" class="menu__item">ПОЛНЫЙ САЙТ с дизайном и CMS</a>
+                            <a href="expres-site.html" class="menu__item">СРОЧНЫЙ САЙТ</a>
+                            <a href="portfolio.html" class="menu__item">Выбрать сайт из готовых примеров</a>
+                            <a href="anketa.html" class="menu__item">Форма заказа сайта</a>
+                            <a href="blog.html" class="menu__item">Полезно знать о сайтах</a>
+                        </div>
+                    </div>
+                    <!-- кнопка главного меню -->
+
+                    <a class="snetwork__link icon-mail" href="mailto:arizel022@gmail.com" target="_blank"></a>
+                    <a class="snetwork__link icon-telegram1" href="https://t.me/arizel022" target="_blank"></a>
+                    <a class="snetwork__link icon-skype" href="skype:arizel022?chat" target="_blank"></a>
+                    <a class="snetwork__link icon-viber" href="viber://add?number=380954455026" target="_blank"></a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="anketa">
+        <div class="container">
+            <div class="anketa__inner">
+                <h1>Анкета заказа сайта WildWeb</h1>
+                <p class="anketa__text">
+                    Пожалуйста, уделите 5 минут анкете, представленной ниже. Мы специально составили ее таким
+                    образом, чтобы охватить большую часть деталей. Отмечая галочками наиболее подходящие пункты, вы
+                    экономите свое время, которое потратили бы на объяснение нам всех подробностей. А мы таким
+                    образом сможем быстрее утвердить ТЗ и взять заказ в работу.
+                </p>
+
+                <form action="" action="mail.php" name="form" method="post" class="ank">
+                    <!-- <label>Last Name<input type="text" name="lastname"></label> -->
+
+                    <fieldset class="ank__wrapper rase">
+                        <legend><b>Выберите вариант сайта</b></legend>
+                        <div class="ank__box ank__box--hor">
+                            <div class="ank__item rase__item">
+                                <input type="radio" name="qw3" value="1" onclick='Hide("cat1");'>
+                                <div class="ank__text rase__text">Сайт на шаблоне WordPress</div>
+                            </div>
+                            <div class="ank__item rase__item">
+                                <input type="radio" name="qw3" value="2">
+                                <div class="ank__text rase__text">Стандартный (сайт из наших примеров)</div>
+                            </div>
+                            <div class="ank__item rase__item">
+                                <input type="radio" name="qw3" value="3" onclick='Hide("cat1");'>
+                                <div class="ank__text rase__text">Персональный (с уникальным дизайном)</div>
+                            </div>
+                            <div class="ank__item rase__item">
+                                <input type="radio" name="qw3" value="4" onclick='Hide("cat1");'>
+                                <div class="ank__text rase__text">Полный (с уникальным дизайном на WordPress)</div>
+                            </div>
+                            <div class="ank__item rase__item">
+                                <input type="radio" name="qw3" value="5" onclick='Hide("cat1");'>
+                                <div class="ank__text rase__text">У меня собственное ТЗ на сайт.</div>
+                            </div>
+                            <div class="ank__item rase__item">
+                                <input type="radio" name="qw3" value="6" onclick='Hide("cat1");'>
+                                <div class="ank__text rase__text">Мне нужно доработать мой текущий сайт.</div>
+                            </div>
+                        </div>
+                        <div class="ank__item">
+                            <input type="checkbox" name="qw1[1]" value="1">
+                            <div class="ank__text">
+                                Выбранный вариант сайта нужен СРОЧНО (итоговая стоимость будет выше)
+                            </div>
+                        </div>
+                    </fieldset>
+                    <fieldset class="ank__wrapper">
+                        <legend><b>Раздел услуг</b></legend>
+                        <div class="ank__box">
+                            <div class="ank__item">
+                                <input type="checkbox" name="qw1[1]" value="1">
+                                <div class="ank__text">Мне нужен раздел услуг на моем сайте.</div>
+                            </div>
+                            <div class="ank__item">
+                                <input type="checkbox" name="qw1[1]" value="1">
+                                <div class="ank__text">Выпадающий список услуг в главном меню</div>
+                            </div>
+                            <div class="ank__item">
+                                <input type="checkbox" name="qw1[1]" value="1">
+                                <div class="ank__text">Отдельная страница для каждой услуги</div>
+                            </div>
+
+                        </div>
+                    </fieldset>
+                    <fieldset class="ank__wrapper">
+                        <legend><b>О нас, о компании - страница, описывающая вашу деятельность</b></legend>
+                        <div class="ank__box ank__box--hor">
+                            <div class="ank__item">
+                                <input type="checkbox" name="qw1[1]" value="1">
+                                <div class="ank__text">У меня есть фото, дипломы, лицензии или прочие документы, которые
+                                    я хотел бы разместить
+                                    в разделе о моей компании.</div>
+                            </div>
+                            <div class="ank__item">
+                                <input type="checkbox" name="qw1[1]" value="1">
+                                <div class="ank__text">У меня есть текст обо мне и моей деятельности, который можно
+                                    разместить в этом разделе.</div>
+                            </div>
+                            <div class="ank__item">
+                                <input type="checkbox" name="qw1[1]" value="1">
+                                <div class="ank__text">У меня есть информация, которую я могу рассказать на словах о
+                                    себе и своей деятельности.</div>
+                            </div>
+                            <div class="ank__item">
+                                <input type="checkbox" name="qw1[1]" value="1">
+                                <div class="ank__text">Мне вообще НЕ нужен раздел О компании на моем сайте.</div>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <fieldset class="ank__wrapper">
+                        <legend><b>Контакты или Связаться</b></legend>
+                        <div class="ank__box">
+                            <div class="ank__item">
+                                <input type="text"
+                                    placeholder="Номера ваших телефонов, которые будут на cайте (через запятую, если несколько).">
+                            </div>
+                            <div class="ank__item">
+                                <input type="text" placeholder="E-mail (через запятую, если несколько).">
+                            </div>
+                            <div class="ank__item">
+                                <input type="text" placeholder="Если у вашей компании есть адрес, введите его здесь.">
+                            </div>
+                            <div class="ank__item">
+                                <input type="checkbox" name="qw1[1]" value="1">
+                                <div class="ank__text">На моем сайте должна быть Google-карта с отметкой о
+                                    местоположении моей компании.</div>
+                            </div>
+                            <textarea name="" id="" cols="30" rows="3"
+                                placeholder="Если у вашей компании есть страницы в соц.сетях (Facebook, Instagram и т.д.), введите их здесь. Будет еще лучше, если вы сразу укажете ссылки на эти страницы."></textarea>
+
+                            <textarea name="" id="" cols="30" rows="3"
+                                placeholder="Если для связи  с клиентами вы используете мессенджеры (Telegram, Skype, Viber, WhatsApp  и прочие), укажите их здесь."></textarea>
+                        </div>
+                    </fieldset>
+                    <fieldset class="ank__wrapper">
+                        <legend><b>Блог - раздел для статей или новостей</b></legend>
+                        <div class="ank__box">
+                            <div class="ank__item">
+                                <input type="checkbox" name="qw1[1]" value="1">
+                                <div class="ank__text">На моем сайте должен быть раздел для статей или новостей.</div>
+                            </div>
+                            <div class="ank__item">
+                                <input type="checkbox" name="qw1[1]" value="1">
+                                <div class="ank__text">У ваших статей/новостей будут категории или подкатегории?</div>
+                            </div>
+                            <div class="ank__item">
+                                <div class="ank__text">Сколько новостей и статей мы должны подготовить для вас в рамках
+                                    создания сайта?</div>
+                                <select name="qw2">
+                                    <option value="1" selected>до 10 (без доплат сверх бюджета на сайт)</option>
+                                    <option value="2">от 15 до 20 (с доплатой 1500 грн)</option>
+                                    <option value="3">Мне нужно регулярное добавление текстов (бюджет по договоренности)
+                                    </option>
+                                </select>
+                            </div>
+                        </div>
+
+                    </fieldset>
+                    <fieldset class="ank__wrapper">
+                        <legend><b>Товары и продукция</b></legend>
+                        <div class="ank__box">
+                            <div class="ank__item">
+                                <input type="checkbox" name="qw1[1]" value="1">
+                                <div class="ank__text">Я планирую размещать товары на своем сайте.</div>
+                            </div>
+                            <div class="ank__item">
+                                <input type="text" required placeholder="Какой это товар?">
+                            </div>
+                            <textarea name="" id="" cols="30" rows="3"
+                                placeholder="У ваших товаров будут категории или подкатегории? Если да, укажите их здесь"></textarea>
+                            <textarea name="" id="" cols="30" rows="3"
+                                placeholder="У едиинцы вашего товара есть вариации: размер, цвет, габариты, материал и т.д.? Если да, укажите их здесь"></textarea>
+                        </div>
+                    </fieldset>
+                    <fieldset class="ank__wrapper">
+                        <legend><b>Terms and Conditions - Условия и Положения</b></legend>
+                        <div class="ank__box">
+                            <div class="ank__item">
+                                <input type="checkbox" name="qw1[1]" value="1">
+                                <div class="ank__text">Мне нужны на сайте страницы, где будут описаны Условия
+                                    использования и прочие правовые
+                                    нормы.</div>
+                            </div>
+                            <textarea name="" id="" cols="30" rows="3" placeholder="Сколько и каких страниц вам нужно? Перечислите. 
+Например, 'Privacy policy, Terms and Conditions'"></textarea>
+                        </div>
+                    </fieldset>
+                    <fieldset class="ank__wrapper">
+                        <legend><b>Портфолио, примеры работ, кейсы</b></legend>
+                        <div class="ank__box">
+                            <div class="ank__item">
+                                <input type="checkbox" name="qw1[1]" value="1">
+                                <div class="ank__text">Мне нужны примеры моих работ или услуг на сайте.</div>
+                            </div>
+                            <div class="ank__item">
+                                <input type="checkbox" name="qw1[1]" value="1">
+                                <div class="ank__text">Мне нужно, чтобы каждая работа была на отдельной странице.</div>
+                            </div>
+                            <div class="ank__item">
+                                <input type="text" name="qw1[1]" placeholder="Сколько страниц с работами вам нужно?">
+                            </div>
+                            <textarea name="" id="" cols="30" rows="3"
+                                placeholder="Укажите, что должна содержать страница готовой работы. Например: фотоотчет, описание проекта, характеристики, впечатления клиента, видеоролик и т.д."></textarea>
+                        </div>
+                    </fieldset>
+                    <fieldset class="ank__wrapper">
+                        <legend><b>Фотогалерея</b></legend>
+                        <div class="ank__box">
+                            <div class="ank__item">
+                                <input type="checkbox" name="qw1[1]" value="1">
+                                <div class="ank__text">Мне нужна фотогалеря на моем сайте.</div>
+                            </div>
+                            <textarea name="" id="" cols="30" rows="3"
+                                placeholder="Опишите, что вы хотите разместить в галерее - фото ваших работ, товары, что-либо еще."></textarea>
+                        </div>
+                    </fieldset>
+                    <fieldset class="ank__wrapper">
+                        <legend><b>Видео</b></legend>
+                        <div class="ank__box">
+                            <div class="ank__item">
+                                <input type="checkbox" name="qw1[1]" value="1">
+                                <div class="ank__text">Я планирую размещать видео на моем сайте.</div>
+                            </div>
+                            <textarea name="" id="" cols="30" rows="3"
+                                placeholder="Опишите, какие видео вы планируете публиковать, в каком количестве и какого типа?(небольшие ролики, фильмы и другую видеопродукцию, ролики в высоком разрешении)"></textarea>
+
+                        </div>
+                    </fieldset>
+                    <fieldset class="ank__wrapper">
+                        <legend><b>Интерактивный контент</b></legend>
+                        <div class="ank__box">
+                            Под интерактивным контентом подразумеваются любой функционал сайта, не входящий в базовую
+                            комплектацию. Например, если вы продаете обувь разных размеров и хотите, чтобы при
+                            переключении цветовых индикаторов автоматически менялись фото. Или же вы предлагаете
+                            ремонтные услуги и хотите показывать клиенту калькулятор сметы.
+                            <div class="ank__item">
+                                <input type="checkbox" name="qw1[1]" value="1">
+                                <div class="ank__text">Мне нужен специализированный интерактивный контент на моем сайте.
+                                </div>
+                            </div>
+                            <textarea name="" id="" cols="30" rows="3"
+                                placeholder="Опишите ваши пожелания. По возможности можете добавить ссылку на подобный функционал на другом сайте."></textarea>
+
+                        </div>
+                    </fieldset>
+                    <fieldset class="ank__wrapper ank__contact">
+                        <legend><b>Данные для связи с вами</b></legend>
+                        <div class="ank__box">
+                            Если вы заполнили данные анкеты, жмите кнопку "Отправить". Если какие-то вопросы или пункты
+                            остались неясны или требуют подробного обсуждения - можете оставить их пустыми, либо задать
+                            вопрос прямо в поле для ответа.
+                            <br><br>
+                            После получения вашей анкеты, мы сразу же приступим к ее обработке и начнем подготавливать
+                            Техническое Задание на сайт. Укажите свои контактные данные, чтобы мы могли связаться с вами
+                            и уведомить о процессе работы над вашим сайтом.
+                            <div class="ank__item">
+                                <input type="text" required placeholder="Ваше имя">
+                            </div>
+                            <div class="ank__item">
+                                <input type="email" required placeholder="Ваш E-mail">
+                            </div>
+                            <div class="ank__item">
+                                <input type="phone" required placeholder="Ваш телефон или мессенджер">
+                            </div>
+                            <br>
+                                <b>Чтобы ускорить подготовительный этап разработки и сэкономить время наших клиентов, мы
+                                стараемся регулировать уровень вовлечения заказчика в техническую часть создания сайта.
+                                Пожалуйста, отметье наиболее комфортный для вас вариант:</b> 
+                                <div class="ank__item">
+                                    <input type="checkbox" name="qw1[1]" value="1">
+                                    <div class="ank__text">Я хочу принимать самое активное участие в создании моего сайта. Информируйте меня о каждом новом шаге в процессе работы. Я хочу подробно обсуждать все детали и уделять время любым вопросам.</div>
+                                </div>
+                                <div class="ank__item">
+                                    <input type="checkbox" name="qw1[1]" value="1">
+                                    <div class="ank__text">Меня интересуют только важные вопросы касательно создания моего сайта. Я хочу обсуждать внешний вид сайта в процессе создания, структуру страниц, вопросы контента. Технические и функциональные подробности меня не интересуют, я просто хочу, чтобы они были сделаны хорошо.</div>
+                                </div>
+                                <div class="ank__item">
+                                    <input type="checkbox" name="qw1[1]" value="1">
+                                    <div class="ank__text">Мне нужен качественный рабочий сайт для моих целей. Я не хочу вникать в этапы работы и готов уделять время лишь важным вопросам касательно сайта, где без моего участия не обойтись. Меня вполне устраивает, если вы выполните этап работы в том виде, который представляете наиболее качественным, не уточняя лишних деталей.</div>
+                                </div>
+                                <div class="ank__item">
+                                    <input type="checkbox" name="qw1[1]" value="1">
+                                    <div class="ank__text">Я не разбираюсь в создании сайтов. Мне нужно разъяснить, какой сайт мне лучше выбрать.</div>
+                                </div>
+                        </div>
+                    </fieldset>
+                    <fieldset class="ank__wrapper">
+                        <legend><b>Дополнительные пожелания</b></legend>
+                        <div class="ank__box">
+                            <textarea name="" id="" cols="30" rows="3"
+                                placeholder="Если у вас есть дополнительные примечания или пожелания к вашему заказу, оставьте их тут."></textarea>
+                        </div>
+                    </fieldset>
+                    <button type="submit">Отправить</button>
+                </form>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="article">
+        <div class="container">
+            <div class="article__inner">
+                <h2>Портфолио сайтов WildWeb</h2>
+                <p class="article__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa sint
+                    voluptatibus, perferendis modi non ipsa cumque architecto ad enim officia quis sit debitis nesciunt
+                    repudiandae illum? Quisquam consequuntur esse fugit!Omnis tempora quo culpa error doloremque aperiam
+                    tenetur dolores voluptas quas? Cupiditate, consequatur corporis illo, fugiat repellendus recusandae
+                    optio distinctio commodi porro dicta odit, voluptate pariatur praesentium. Eius, iusto officia?</p>
+            </div>
+        </div>
+    </section>
+
+
+    <div id="toTop"><span class="icon-arrow-up"></span></div>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <a class="footer__logo logo" href="index.html"></a>
+                <div class="footer__list">
+                    <a class="footer__link" href="anketa.html">
+                        <div class="footer__icon icon-newspaper"></div>
+                        Заполнить форму заказа сайта
+                    </a>
+                    <a class="footer__link" href="portfolio.html">
+                        <div class="footer__icon icon-puzzle"></div>
+                        Выбрать сайт из примеров
+                    </a>
+                    <a class="footer__link" href="blog.html">
+                        <div class="footer__icon icon-paperclip"></div>
+                        Какие вопросы у вас могут возникнуть
+                    </a>
+                </div>
+                <div class="footer__snetwork">
+                    <div class="snetwork__link menu-btn menu-btn--footer icon-menu">
+                        <div class="menu">
+                            <a href="site-na-shablone.html" class="menu__item">Простой САЙТ НА ШАБЛОНЕ</a>
+                            <a href="site-standart.html" class="menu__item">Сайт СТАНДАРТ</a>
+                            <a href="site-personal.html" class="menu__item">ПЕРСОНАЛЬНЫЙ САЙТ с уникальным дизайном</a>
+                            <a href="site-full.html" class="menu__item">ПОЛНЫЙ САЙТ с дизайном и CMS</a>
+                            <a href="expres-site.html" class="menu__item">СРОЧНЫЙ САЙТ</a>
+                            <a href="portfolio.html" class="menu__item">Выбрать сайт из готовых примеров</a>
+                            <a href="anketa.html" class="menu__item">Форма заказа сайта</a>
+                            <a href="blog.html" class="menu__item">Полезно знать о сайтах</a>
+                        </div>
+                    </div>
+
+                    <a class="snetwork__link icon-mail" href="mailto:arizel022@gmail.com" target="_blank">
+                    </a>
+                    <a class="snetwork__link icon-telegram1" href="https://t.me/arizel022" target="_blank">
+                    </a>
+                    <a class="snetwork__link icon-skype" href="skype:arizel022?chat" target="_blank">
+                    </a>
+                    <a class="snetwork__link icon-viber" href="viber://add?number=380954455026" target="_blank">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            Creating be <a class="footer__bottom-link" href="">Wildweb.online</a> © 2021
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/libs.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

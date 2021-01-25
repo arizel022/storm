@@ -348,12 +348,14 @@ ul, li {
         }
         h2 {
             margin-top: 35px;
+            margin-bottom: 45px;
         }
     }
     &__text {
         font-family: 'Nunito-Regular';
         font-size: 20px;
         text-align: justify;
+        line-height: 28px;
     }
     &__img {
         display: block;
@@ -361,4 +363,103 @@ ul, li {
         padding-left: 25px;
         width: 450px;
     }
+    &__list {
+        display: block;
+        font-family: 'Nunito-Regular';
+        li {
+            font-size: 20px;
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            margin-bottom: 15px;
+            text-align: justify;
+            span {
+                font-size: 22px;
+                &:before {
+                    margin-right: 20px;
+                    font-size: 14px;
+                    display: block;
+                }
+            }
+        }
+    }
+}
+.anketa {
+    &__inner {
+        padding: 40px 15px;
+    }
+    h1 {
+        text-align: center;
+    }
+    &__text {
+        text-align: justify;
+        font-size: 20px;
+        margin-bottom: 35px;
+    }
+}
+.ank {
+    font-size: 20px;
+    font-family: 'Nunito-Regular';
+    label {
+        margin: 15px 0;
+        display: block;
+    }
+    input, textarea, select {
+        &:focus {
+            outline: none;
+        }
+    }
+    input[type="radio"],
+    input[type="checkbox"] {
+        width: 20px;
+        height: 20px;
+    }
+    input[type="text"],input[type="email"],input[type="phone"] {
+        width: 100%;
+        padding: 5px 15px;
+        // margin-left: 15px;
+        max-height: 50px;
+    }
+    textarea {
+        margin: 15px 0;
+        padding: 15px;
+    }
+
+    //------------------fieldset
+    &__wrapper {
+        margin-bottom: 40px;
+    }
+    &__box {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 25px 10px;
+        flex-direction: column;
+        &--hor {
+            flex-direction: row; 
+        }
+    }
+    &__item {
+        display: flex;
+        padding: 10px 0;
+        max-height: 70px;
+    }
+    &__text {
+        padding: 0 100px 0 25px;
+        text-align: justify;
+        width: 98%;
+    }
+    &__contact {
+        .ank__item {
+            max-height: 110px;
+        }
+    }
+}
+.rase {
+    &__item {
+        width: 48%;
+        justify-content: start;
+    }
+
+
 }
