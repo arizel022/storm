@@ -413,6 +413,9 @@ ul, li {
     input[type="checkbox"] {
         width: 20px;
         height: 20px;
+        &:hover {
+            cursor: pointer;
+        }
     }
     input[type="text"],input[type="email"],input[type="phone"] {
         width: 100%;
@@ -423,6 +426,11 @@ ul, li {
     textarea {
         margin: 15px 0;
         padding: 15px;
+        resize: none;
+    }
+    legend {
+        font-size: 24px;
+        text-shadow: 1px 1px 6px rgb(187, 187, 187);
     }
 
     //------------------fieldset
@@ -448,13 +456,36 @@ ul, li {
         padding: 0 100px 0 25px;
         text-align: justify;
         width: 98%;
+
     }
-    &__contact {
+    &__client {
         .ank__item {
             max-height: 110px;
         }
     }
+    &__btn {
+        display: block;
+        padding: 15px 35px 10px;
+        border-radius: 30px;
+        cursor: pointer;
+        color: #fff;
+        background-color: $main;
+        transition: .2s;
+        border: 1px solid transparent;
+        text-transform: uppercase;
+        &:hover {
+            box-shadow: 4px 3px 8px rgb(19, 60, 40);
+            border: 1px solid #fff;
+        }
+        &:focus {
+            outline: none;
+        }
+        &:active {
+            box-shadow: inset 4px 3px 8px rgb(0, 0, 0);
+        }
+    }
 }
+
 .rase {
     &__item {
         width: 48%;
@@ -463,3 +494,11 @@ ul, li {
 
 
 }
+.ank__wrapper {
+    .ank__text.variable {
+        color: grey;
+    }
+    .ank__text.variable.disabled {
+        color: #000;
+    }
+} 

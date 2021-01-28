@@ -1,6 +1,70 @@
 // $(document).ready(function () {
 // });
 
+//-----------------------------------------E-mail Ajax Send
+
+$(document).ready(function() {
+	$("#ankform").submit(function() {
+		var th = $(this);
+		$.ajax({
+			type: "POST",
+			url: "mail.php",
+			data: th.serialize()
+		}).done(function() {
+			alert("Спасибо");
+			setTimeout(function() {
+				th.trigger("reset");
+			}, 1000);
+		});
+		return false;
+	});
+});
+
+//-------------------------переключатель атрибута для элементов формы
+$(document).ready(function() {
+	$(".obj-start").click(function(){ //активатор
+		$(this).parent().nextAll().find('.obj-end').toggleAttr("disabled", true);
+		$(this).parent().nextAll().find('.variable').toggleClass('disabled');
+		$(this).parent().nextAll('.obj-end').toggleAttr("disabled", true);
+	});
+	$.fn.toggleAttr = function(attr, val) {
+		var test = $(this).attr(attr);
+		if (test) { 
+			$(this).removeAttr(attr);
+		} else {
+			$(this).attr(attr, val);
+		}
+		return this;
+	};
+	
+});
+
+	//-------------------------функция-переключатель значений атрибута для элементов формы
+	// $.fn.toggleAttrVal = function(attr, val1, val2) {
+	// 	var test = $(this).attr(attr);
+	// 	if ( test === val1) {
+	// 	  $(this).attr(attr, val2);
+	// 	  return this;
+	// 	}
+	// 	if ( test === val2) {
+	// 	  $(this).attr(attr, val1);
+	// 	  return this;
+	// 	}
+	// 	// default to val1 if neither
+	// 	$(this).attr(attr, val1);
+	// 	return this;
+	//   };
+
+	//-------------------textarea autoresize
+	$('textarea').each(function () {
+		this.setAttribute('style', 'height:' + (this.scrollHeight) + 'px;overflow-y:hidden;');
+	}).on('input', function () {
+		this.style.height = 'auto';
+		this.style.height = (this.scrollHeight) + 'px';
+	});
+
+
+
 	//-----------------------------------------гармошка блока faq
     $('.faq__ans').hide();
     $('.faq__item-wrapper').click(function () {
@@ -40,21 +104,7 @@
         $('body,html').animate({scrollTop:0},800);
 	});
 	
-//-----------------------------------------E-mail Ajax Send
-	$(".backform__form").submit(function() {
-		var th = $(this);
-		$.ajax({
-			type: "POST",
-			url: "mail.php",
-			data: th.serialize()
-		}).done(function() {
-			alert("Спасибо");
-			setTimeout(function() {
-				th.trigger("reset");
-			}, 1000);
-		});
-		return false;
-	});
+
 	
 //-----------------------------------------вызов попапа заказать
     $('.order__wrapper').hide();
